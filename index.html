@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portifólio de Gabriel Marques, desenvolvedor web e mobile júnior, full stack" />
+    <meta name="author" content="Gabriel Marques" />
+    <meta property="og:description" content="Portifólio de Gabriel Marques, desenvolvedor web e mobile júnior, full stack" />
+    <meta property="og:image" content="./assets/images/gabriel_perfil.jpeg" />
+    <meta property="og:type" content="website" />
+    <meta name="keywords" content="developer, programação, dev, desenvolvedor, programador, html, css, javascript, typescript, nodejs, c#, mantine, tailwind, github, frontend, backend, fullstack, engenharia de software, scrum, metodologias ágeis, foccus" />
+    <meta name="robots" content="index" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="./assets/js/main.js" defer></script>
+
+    <title>Gabriel Marques // Portifólio</title>
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="wrapper">
+        <a class="logo close" href="#home"> Gabriel Marques</a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a id="aboutNav" class="close" href="#about">Sobre mim</a>
+            </li>
+            <li>
+              <a id="foccusNav" class="close" href="#foccus">Foccus</a>
+            </li>
+            <li>
+              <a id="knowledgeNav" class="close" href="#knowledge"
+                >Conhecimentos</a
+              >
+            </li>
+            <li>
+              <a id="contactNav" class="close" href="#contact">Fale comigo</a>
+            </li>
+          </ul>
+
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/foccusgo?igsh=bWRteTFnenF3b2l6&utm_source=qr"
+                title="Instagram"
+                target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu open"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#00856F"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          class="close-menu close"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h3>Hello world 👋🏾</h3>
+            <h1>Eu sou Gabriel Marques</h1>
+          </header>
+          <div class="content">
+            <p class="line typing">Desenvolvedor Web e Mobile Júnior | Full Stack</p>
+            <a class="button" href="#contact"> Fale comigo </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="assets/images/notebook.png"
+            alt="Imagem de um notebook."
+            id="notebook-1"
+          />
+          <img
+            src="assets/images/notebook-2.png"
+            alt="Imagem de um notebook com tela quebrada"
+            id="notebook-2"
+          />
+          <img
+            src="assets/images/notebook-2-white.png"
+            alt="Imagem de um notebook com tela quebrada"
+            id="notebook-2-white"
+          />
+          <img
+            src="./assets/images/vidro.png"
+            alt="Imagem de estilhaços de vidro com os ícones de HTML5, CSS3 e JavaScript por cima."
+            id="vidro"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Sobre mim</h2>
+          </header>
+          <div class="content">
+            <p>
+              Olá! Meu nome é Gabriel Marques e sou desenvolvedor web e mobile júnior, com atuação full stack. Atualmente, curso o oitavo período de Engenharia de Software, o que me proporciona uma sólida base acadêmica e visão abrangente sobre tecnologia e inovação.
+            </p>
+            <p>
+              Possuo experiência prática em desenvolvimento front-end, utilizando HTML, CSS, JavaScript, TypeScript e frameworks modernos como Mantine e Tailwind. No back-end, trabalho com Node.js e C#, desenvolvendo soluções robustas e escaláveis. Além disso, tenho conhecimento em infraestrutura de redes e tecnologia da informação, o que amplia minha capacidade de entregar projetos completos e integrados.
+            </p>
+            <p>
+              Sou fundador da Foccus, empresa dedicada ao desenvolvimento de softwares e soluções digitais personalizadas. Valorizo o aprendizado contínuo, a busca por excelência e a colaboração em equipe. Tenho inglês básico, certificações em Scrum e metodologias ágeis, e sou reconhecido pela facilidade de comunicação e trabalho em grupo.
+            </p>
+            <p>
+              Estou sempre em busca de novos desafios e oportunidades para crescer profissionalmente, contribuindo com ética, criatividade e comprometimento em cada projeto.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img
+            src="./assets/images/gabriel_perfil.jpeg"
+            alt="Foto de Gabriel Marques"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="foccus">
+      <div class="wrapper foccus-wrapper">
+        <header class="foccus-header">
+          <h2>Foccus <span class="badge">Soluções Profissionais</span></h2>
+          <p class="subtitle">Transformando ideias em soluções digitais inovadoras</p>
+        </header>
+        <div class="foccus-content">
+          <p class="foccus-description">
+            A <strong>Foccus</strong> é minha empresa de desenvolvimento de softwares e soluções digitais. Atuamos com projetos personalizados para web e mobile, utilizando as melhores práticas e tecnologias do mercado. Nosso objetivo é transformar ideias em soluções inovadoras para nossos clientes.
+          </p>
+          <hr class="foccus-divider" />
+          <div class="foccus-diferenciais-row">
+            <div class="foccus-card">
+              <img src="./assets/icons/leaf-line-white.png" alt="Inovação" />
+              <h3>Inovação</h3>
+              <p>Projetos sob medida, com tecnologia de ponta e criatividade.</p>
+            </div>
+            <div class="foccus-card">
+              <img src="./assets/icons/celular.svg" alt="Mobile e Web" />
+              <h3>Web & Mobile</h3>
+              <p>Desenvolvimento completo para todas as plataformas.</p>
+            </div>
+            <div class="foccus-card">
+              <img src="./assets/icons/favicon.png" alt="Excelência" />
+              <h3>Excelência</h3>
+              <p>Qualidade, agilidade e foco total no resultado do cliente.</p>
+            </div>
+          </div>
+          <div class="foccus-btn-area">
+            <a class="button foccus-btn" href="https://www.foccusgo.com.br" target="_blank">Conheça a Foccus</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrapper"></div>
+    </section>
+
+    <section id="knowledge">
+      <div class="wrapper">
+        <header>
+          <h2>Conhecimentos</h2>
+        </header>
+        <div class="content">
+          <div class="cards premium-cards">
+            <div class="card">
+              <h3>HTML5</h3>
+              <p>
+                Estruturação semântica e acessível de páginas web modernas.
+              </p>
+            </div>
+            <div class="card">
+              <h3>CSS3</h3>
+              <p>
+                Estilização avançada, responsividade, animações e design moderno.
+              </p>
+            </div>
+            <div class="card">
+              <h3>JavaScript</h3>
+              <p>
+                Interatividade, lógica de programação e aplicações dinâmicas para web e mobile.
+              </p>
+            </div>
+            <div class="card">
+              <h3>TypeScript</h3>
+              <p>
+                Tipagem estática e robustez no desenvolvimento de aplicações escaláveis.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Node.js</h3>
+              <p>
+                Backend eficiente, APIs RESTful e soluções escaláveis para web.
+              </p>
+            </div>
+            <div class="card">
+              <h3>C#</h3>
+              <p>
+                Desenvolvimento de sistemas robustos, APIs e integração com diversas plataformas.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Mantine & Tailwind</h3>
+              <p>
+                Frameworks modernos para UI, componetização e design ágil.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Infraestrutura de Redes & TI</h3>
+              <p>
+                Conhecimento em redes, servidores e integração de sistemas.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Scrum & Metodologias Ágeis</h3>
+              <p>
+                Gestão eficiente de projetos, colaboração e entrega contínua de valor.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Comunicação & Trabalho em Equipe</h3>
+              <p>
+                Facilidade de comunicação, colaboração e liderança em ambientes multidisciplinares.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Fale comigo!</h2>
+          </header>
+          <div class="content">
+            <ul>
+              <li>
+                <a href="mailto: gabrimarquesniq@gmail.com" title="Enviar e-mail">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                      stroke="#00856F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M22 6L12 13L2 6"
+                      stroke="#00856F"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  gabrimarquesniq@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+5562996691908" title="Fazer ligação"
+                  ><img
+                    src="./assets/icons/celular.svg"
+                    alt="Ícone de celular."
+                    id="cel"
+                  />
+                  +55 62 99669-1908</a
+                >
+              </li>
+            </ul>
+
+            <a
+              class="button"
+              title="Me chama no zap!"
+              href="https://wa.me/5562996691908"
+              target="_blank"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6 14.0001C16.4 13.9001 15.1 13.3001 14.9 13.2001C14.7 13.1001 14.5 13.1001 14.3 13.3001C14.1 13.5001 13.7 14.1001 13.5 14.3001C13.4 14.5001 13.2 14.5001 13 14.4001C12.3 14.1001 11.6 13.7001 11 13.2001C10.5 12.7001 10 12.1001 9.6 11.5001C9.5 11.3001 9.6 11.1001 9.7 11.0001C9.8 10.9001 9.9 10.7001 10.1 10.6001C10.2 10.5001 10.3 10.3001 10.3 10.2001C10.4 10.1001 10.4 9.9001 10.3 9.8001C10.2 9.7001 9.7 8.5001 9.5 8.0001C9.4 7.3001 9.2 7.3001 9 7.3001C8.9 7.3001 8.7 7.3001 8.5 7.3001C8.3 7.3001 8 7.5001 7.9 7.6001C7.3 8.2001 7 8.9001 7 9.7001C7.1 10.6001 7.4 11.5001 8 12.3001C9.1 13.9001 10.5 15.2001 12.2 16.0001C12.7 16.2001 13.1 16.4001 13.6 16.5001C14.1 16.7001 14.6 16.7001 15.2 16.6001C15.9 16.5001 16.5 16.0001 16.9 15.4001C17.1 15.0001 17.1 14.6001 17 14.2001C17 14.2001 16.8 14.1001 16.6 14.0001ZM19.1 4.9001C15.2 1.0001 8.9 1.0001 5 4.9001C1.8 8.1001 1.2 13.0001 3.4 16.9001L2 22.0001L7.3 20.6001C8.8 21.4001 10.4 21.8001 12 21.8001C17.5 21.8001 21.9 17.4001 21.9 11.9001C22 9.3001 20.9 6.8001 19.1 4.9001ZM16.4 18.9001C15.1 19.7001 13.6 20.2001 12 20.2001C10.5 20.2001 9.1 19.8001 7.8 19.1001L7.5 18.9001L4.4 19.7001L5.2 16.7001L5 16.4001C2.6 12.4001 3.8 7.4001 7.7 4.9001C11.6 2.4001 16.6 3.7001 19 7.5001C21.4 11.4001 20.3 16.5001 16.4 18.9001Z"
+                fill="white"
+              />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="col-b">
+          <img src="./assets/images/celular-2.png" alt="Ícone de celular." />
+        </div>
+      </div>
+    </section>
+
+    <a id="backToTopButton" title="Voltar ao topo" href="#home">
+      <svg
+        width="40"
+        height="40"
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <path
+          d="M20 27V13"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M13 20L20 13L27 20"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+
+    <footer>
+      <div class="wrapper">
+        <div class="col-a">
+          <a class="logo" href="#home"> Gabriel </a>
+
+          <p>
+            ©2025 por Gabriel. <br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+
+        <div class="col-b">
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/foccusgo?igsh=bWRteTFnenF3b2l6&utm_source=qr"
+                title="Instagram"
+                target="_blank"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 6.49997H17.51"
+                    stroke="#FFFAF1"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Acessibilidade: função de tema removida
+    </script>
+  </body>
+</html>

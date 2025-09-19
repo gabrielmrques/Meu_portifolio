@@ -1830,14 +1830,59 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     justify-content: center;
     z-index: 1001;
   }
-  nav#navigation .menu {
+  /* Corrige o menu mobile para abrir corretamente */
+  .menu {
     display: none;
   }
-  body.menu-expanded nav#navigation .menu {
-    display: flex;
+  body.menu-expanded .menu {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    padding-top: var(--nav-height);
+    padding-inline: 2rem;
+    transform: translateX(0);
   }
 }
 
+@media (max-width: 500px) {
+  /* Foccus Section Responsivo - reforço para evitar corte */
+  #foccus .foccus-header h2 {
+    font-size: 2.2rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+  }
+  #foccus .foccus-header .badge {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.7rem;
+    margin-left: 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 90vw;
+  }
+  #foccus .subtitle {
+    font-size: 1.2rem;
+  }
+  #foccus .foccus-description {
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  #foccus .foccus-header {
+    overflow: visible;
+    max-width: 100vw;
+  }
+}
 /*===== ANIMAÇÕES =============================================*/
 
 @keyframes slideIn {

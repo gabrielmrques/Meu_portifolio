@@ -1830,12 +1830,9 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     justify-content: center;
     z-index: 1001;
   }
-  /* Corrige o menu mobile para abrir corretamente */
+  /* Remove display: none do .menu para permitir controle só pelo transform */
   .menu {
-    display: none;
-  }
-  body.menu-expanded .menu {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -1848,6 +1845,10 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     z-index: 1000;
     padding-top: var(--nav-height);
     padding-inline: 2rem;
+    transform: translateX(100%);
+    transition: transform 300ms;
+  }
+  body.menu-expanded .menu {
     transform: translateX(0);
   }
 }

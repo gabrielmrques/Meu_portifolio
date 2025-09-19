@@ -1450,6 +1450,24 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     font-size: 1.2rem;
   }
 
+  /*===== Foccus Section Responsivo */
+  #foccus .foccus-header h2 {
+    font-size: 2.2rem;
+    word-break: break-word;
+  }
+  #foccus .foccus-header .badge {
+    font-size: 1.1rem;
+    padding: 0.2rem 0.7rem;
+    margin-left: 0.5rem;
+  }
+  #foccus .subtitle {
+    font-size: 1.2rem;
+  }
+  #foccus .foccus-description {
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+  }
+
   /*===== NAVEGATION ==================================*/
 
   nav#navigation button svg {
@@ -1805,6 +1823,66 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 @media (max-width: 900px) {
+  /* Garante que o botão de menu hambúrguer fique visível */
+  nav#navigation .open-menu {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+  }
+  nav#navigation .menu {
+    display: none;
+  }
+  body.menu-expanded nav#navigation .menu {
+    display: flex;
+  }
+}
+
+/*===== ANIMAÇÕES =============================================*/
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-vidro {
+  from {
+    right: -4rem;
+    opacity: 0;
+  }
+  to {
+    right: -2rem;
+    opacity: 1;
+  }
+}
+
+/*===== RESPONSIVO (MOBILE) ====================================*/
+
+@media (max-width: 768px) {
   /*===== GERAL =======================================*/
 
   body {
@@ -2111,118 +2189,5 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   to {
     right: -2rem;
     opacity: 1;
-  }
-}
-
-/*===== RESPONSIVO (MOBILE) ====================================*/
-
-@media (max-width: 768px) {
-  /*===== GERAL =======================================*/
-
-  body {
-    overflow-x: hidden;
-  }
-
-  .wrapper {
-    padding-inline: 2rem;
-  }
-
-  section {
-    padding-block: 8rem;
-  }
-
-  body section h2 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-
-  /*===== NAVIGATION ==================================*/
-
-  nav#navigation {
-    height: var(--nav-height);
-  }
-
-  nav#navigation .wrapper {
-    padding-inline: 2rem;
-  }
-
-  nav#navigation .menu {
-    display: none;
-  }
-
-  nav#navigation .close-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  nav#navigation button {
-    padding: 1rem;
-  }
-
-  /*===== MENU-EXPANDED ==================================*/
-
-  body.menu-expanded {
-    overflow: hidden;
-  }
-
-  body.menu-expanded nav#navigation.scroll {
-    background: none;
-    backdrop-filter: none;
-  }
-
-  .menu {
-    position: fixed;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
-    background: var(--secundary-color);
-    height: 100vh;
-    z-index: 1000;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transform: translateY(-120%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.4s, opacity 0.4s;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  }
-  body.menu-expanded .menu {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: all;
-  }
-  .menu ul {
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: 4rem;
-  }
-  .open-menu {
-    display: block;
-  }
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    z-index: 1100;
-  }
-}
-
-@media (min-width: 901px) {
-  .open-menu,
-  .close-menu {
-    display: none !important;
-  }
-  .menu {
-    position: static;
-    height: auto;
-    flex-direction: row;
-    opacity: 1 !important;
-    pointer-events: all !important;
-    transform: none !important;
-    background: none;
-    box-shadow: none;
   }
 }

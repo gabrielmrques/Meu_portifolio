@@ -84,25 +84,26 @@ function showBackToTopButtonOnScroll() {
   }
 }
 
-openMenu();
-function openMenu() {
-  const openBtns = document.querySelectorAll(".open");
-  openBtns.forEach((e) => {
-    e.addEventListener("click", () => {
-      document.body.classList.add("menu-expanded");
-    });
-  });
-}
+// --- MENU MOBILE ---
+const openMenuBtn = document.querySelector('.open-menu');
+const closeMenuBtn = document.querySelector('.close-menu');
+const menuLinks = document.querySelectorAll('.menu a');
 
-closeMenu();
-function closeMenu() {
-  const closeBtns = document.querySelectorAll(".close");
-  closeBtns.forEach((e) => {
-    e.addEventListener("click", () => {
-      document.body.classList.remove("menu-expanded");
-    });
+if (openMenuBtn) {
+  openMenuBtn.addEventListener('click', () => {
+    document.body.classList.add('menu-expanded');
   });
 }
+if (closeMenuBtn) {
+  closeMenuBtn.addEventListener('click', () => {
+    document.body.classList.remove('menu-expanded');
+  });
+}
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    document.body.classList.remove('menu-expanded');
+  });
+});
 
 ScrollReveal({
   origin: "bottom",
